@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: orange;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 60%;
+}
+
+.container p {
+  font-family: "Tahoma";
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container input {
+  width: 50%;
+  /* height: 50px; */
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.btn--click {
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+}
+
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+
+  svg {
+    height: 6rem;
+    width: 6rem;
+    fill: orangered;
+    animation: rotate 2s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
